@@ -1,5 +1,6 @@
+require 'FoulBall/the_words'
+
 module FoulBall
-  require 'FoulBall/the_words'
   class Configuration
     attr_accessor :banned_words
     extend TheWords
