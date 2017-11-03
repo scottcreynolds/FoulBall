@@ -14,7 +14,7 @@ RSpec.describe FoulBall do
       badword = "whoopsie"
       expect(FoulBall.fair?(badword)).to be true
       FoulBall.configure do |f|
-        f.foul_words = [badword]
+        f.banned_words = [badword]
       end
       expect(FoulBall.fair?(badword)).to be false
     end
@@ -25,7 +25,7 @@ RSpec.describe FoulBall do
       expect(FoulBall.fair?(bad_word)).to be false
       expect(FoulBall.fair?(new_word)).to be true
       FoulBall.configure do |f|
-        f.foul_words << new_word
+        f.banned_words << new_word
       end
       expect(FoulBall.fair?(bad_word)).to be false
       expect(FoulBall.fair?(new_word)).to be false
