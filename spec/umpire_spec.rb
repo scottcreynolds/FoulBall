@@ -15,11 +15,21 @@ RSpec.describe FoulBall do
     it 'is case insensitive' do
       expect(FoulBall.fair?("FUCK")).to be false
     end
+
+    it 'handles nil and empty strings' do
+      expect(FoulBall.fair?(nil)).to be true
+      expect(FoulBall.fair?("")).to be true
+    end
   end
 
   context '#foul' do
     it 'tells which words are bad' do
       expect(FoulBall.foul("fuck this shit")).to include("fuck", "shit")
+    end
+
+    it 'handles nil and empty strings' do
+      expect(FoulBall.foul(nil)).to eq([])
+      expect(FoulBall.foul("")).to eq([])
     end
   end
 
