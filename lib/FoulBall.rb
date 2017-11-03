@@ -1,8 +1,8 @@
 require 'FoulBall/configuration'
 require 'FoulBall/version'
+require 'FoulBall/umpire'
 
 module FoulBall
-  require 'FoulBall/umpire'
 
   class << self
     attr_accessor :configuration
