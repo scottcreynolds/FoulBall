@@ -1,5 +1,3 @@
-require 'yaml'
-
 module FoulBall
   def self.fair?(text="")
     return true if text.nil? || text.empty?

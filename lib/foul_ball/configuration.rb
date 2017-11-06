@@ -1,4 +1,4 @@
-require 'FoulBall/the_words'
+require 'foul_ball/the_words'
 
 module FoulBall
   class Configuration

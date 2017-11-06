@@ -1,6 +1,6 @@
-require 'FoulBall/configuration'
-require 'FoulBall/version'
-require 'FoulBall/umpire'
+require 'foul_ball/configuration'
+require 'foul_ball/version'
+require 'foul_ball/umpire'
 
 module FoulBall
 

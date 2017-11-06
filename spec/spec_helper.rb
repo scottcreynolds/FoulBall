@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "FoulBall"
+require "foul_ball"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
