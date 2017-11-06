@@ -2,6 +2,8 @@
 
 Opinionated but configurable gem that checks some text against a list of "foul" words. I wrote it during Game 7 of the World Series.
 
+[![Gem Version](https://badge.fury.io/rb/foul_ball.svg)](https://badge.fury.io/rb/foul_ball)
+
 ## Installation
 
 Add this line to your application's Gemfile:
